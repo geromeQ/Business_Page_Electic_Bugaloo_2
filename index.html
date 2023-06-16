@@ -11,27 +11,30 @@
 	<body>
 		<header>
 			<div class="navbar">
-				<div class="logo"><a href="#">Yuuki's Crochet</a></div>
+				<div class="logo"><a href="#"><a href="index_home.html">Yuuki's Crochet</a></a></div>
 				<ul class ="links">
 					<!-- navbar options -->
-					<li><a href="hero"><a href="login.html">Home</a></a></li>
+					<li><a href="hero"><a href="index_home.html">Home</a></a></li>
 					<li><a href="about"><a href="index_about.html">About</a></li>
 					<li><a href="services">Services</a></li>
 					<li><a href="contact">Contact</a></li>
 				</ul>
 				<!-- Button -->
-				<a href="register.html" class="action_btn">Get started</a></a>
-				<div class="toggle_btn">
+				<div id="getstart">
+					<a href="register.html" class="action_btn">Get started</a>
+					<div class="toggle_btn">
+					</div>
 				</div>
-				</div>
+				<div id="user">
+					<a href="#" id="usrnm">user</a>
+					<input type="button" value="Logout" onclick="logout()">
 				</div>
 			</div>
 		</header>
-
 			<section id="hero">
 				<h1>Welcome to Yuuki's crochet <img src="mew.gif" alt="art" style = "width:100px;height: 100px";></h1>
 				<p> We make and commision cute crochet </p>
 			</section>
-
+		<script src="script.js"></script>
 	</body>
 	</html>

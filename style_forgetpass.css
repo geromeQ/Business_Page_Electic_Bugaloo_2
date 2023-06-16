@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    
 }
 body{
     display: flex;
@@ -14,12 +13,11 @@ body{
     background-image: url('gura.jpg');
     background-size: cover;
 	background-position: center;
-    
 }
 .box{
     position: relative;
-    width: 570px;
-    height: 650px;
+    width: 370px;
+    height: 450px;
     background: #1c1c1c;
     border-radius: 50px 5px;
     overflow: hidden;
@@ -29,8 +27,8 @@ body{
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 570px;
-    height: 650px;
+    width: 370px;
+    height: 450px;
     background: linear-gradient(60deg,transparent,#f469a6,#f469a6);
     transform-origin: bottom right;
     animation: animate 3s linear infinite;
@@ -41,8 +39,8 @@ body{
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 570px;
-    height: 650px;
+    width: 370px;
+    height: 450px;
     background: linear-gradient(60deg,transparent,#f1b5ef,#f1b5ef);
     transform-origin: bottom right;
     animation: animate 6s linear infinite
@@ -75,11 +73,16 @@ h2{
     font-weight: 500;
     text-align: center;
 }
+p{
+    background-color:#8f8f8f;
+    display:none;
+    margin-bottom:10px;
+}
 .inputBox
 {
     position: relative;
     width: 300px;
-    margin-top: 35px;
+    margin-top: 20px;
 }
 .inputBox input
 {
@@ -118,7 +121,6 @@ input[type="button"]:active
     font-size: 1em;
     color: #8f8f8f;
     pointer-events: none;
-    letter-spacing: 0.05em;
     transition: 0.5s;
 }
 .inputBox input:valid ~ span,
@@ -133,7 +135,7 @@ input[type="button"]:active
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 165%;
+    width: 100%;
     height: 2px;
     background: #f1b5ef;
     border-radius: 4px;

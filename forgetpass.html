@@ -5,13 +5,13 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="style_login.css" />
+		<link rel="stylesheet" href="style_forgetpass.css" />
 		<title> Yuuki's Crochet </title>
 </head>
 <body>
 	<div class="box">
 		<form action="">
-			<h2>Sign in</h2>
+			<h2>Password Change</h2>
 			<div class="inputBox">
 				<p id="error">Incorrect Password</p>
 				<input type="text" id="username" required>
@@ -20,12 +20,17 @@
 			</div>
 			<div class="inputBox">
 				<input type="password" id="password" required>
-				<span>Enter Password</span>
+				<span>Enter New Password</span>
 				<i></i>
 			</div>
-			<input type="button" onclick="login()" value="Login">
+			<div class="inputBox">
+				<input type="password" id="ppassword" required>
+				<span>Re-enter New Password</span>
+				<i></i>
+			</div>
+			<input type="button" onclick="passChange()" value="Login">
 			<div class="links">
-				<a href="forgetpass.html">Forgot Password?</a>
+				<a href="login.html">Log in</a>
 				<a href="register.html">Sign Up</a>
 			</div>
 		</form>

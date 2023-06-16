@@ -10,33 +10,34 @@
 </head>
 <body>
 	<div class="box">
-		<form action="">
+		<form>
 			<h2>Sign in</h2>
 			<div class="inputBox">
-				<input type="text" required>
+				<input type="text" id="username" required>
 				<span>Username</span>
 				<i></i>
 			</div>
 			<div class="inputBox">
-				<input type="text" required>
+				<input type="password" id="password" required>
 				<span>Enter Password</span>
 				<i></i>
 			</div>
-            <div class="inputBox">
-				<input type="text" required>
+            <div class="inputBox" id="password">
+				<input type="password" id="repassword" required>
 				<span>Re-Enter Password</span>
 				<i></i>
 			</div>
             <div class="inputBox">
-				<input type="email" required>
+				<input type="email" id="email" required>
 				<span>email</span>
 				<i></i>
 			</div>
-			<input type="submit" value="Register">
+			<input type="button" onclick="register()" value="Register">
 			<div class="links">
-				<a href="#">Forgot Password?</a>
+				<a href="forgetpass.html">Forgot Password?</a>
 				<a href="login.html">Already have account?</a>
 			</div>
 		</form>
 	</div>
+	<script src="script.js"></script>
 </body>
