@@ -15,7 +15,7 @@ function login(){
 	if(cred1 == login[0] || cred1 == login[1]){
 		if(cred2 == login[2]){
 			localStorage.setItem("loggedIn", "True");
-			window.location.href = "index.html";
+			window.location.href = "index_home.html";
 		}
 		else{
 			document.getElementById('error').innerText = "Error: Incorrect Password.";
