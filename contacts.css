@@ -1,0 +1,196 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(waterfall.png);
+  background-position: center;
+  background-size: cover;
+}
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #5dec16;
+	font-size: 1rem;
+}
+
+/* color for hover options */
+a:hover {
+	color: lightpink;
+}
+/* HEADER */
+header {
+	position: relative;
+	padding: 0 2rem;
+}
+p {
+	font-style: sans-serif;
+	font-size: 3rem;
+	color: black;
+}
+/* the holy navbar */
+
+.navbar {
+	width: 100%;
+	height: 60px;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* the holy navbar electric bugaloo */
+
+.navbar .logo a {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.navbar .links {
+	display: flex;
+	gap: 2rem;
+}
+.navbar .toggle_btn {
+	color: #fff;
+	font-size: 1.5rem;
+	cursor: pointer;
+	display: none;
+}
+
+.action_btn {
+	background-color: lightpink;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	font-size: 0.8rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: scale 0.2 ease;
+}
+.action_btn:hover {
+	scale: 1.05;
+	color: #fff;
+}
+.action_btn:active {
+	scale: 0.95;
+}
+
+/* HERO */
+section#hero{
+	height: calc(100vh - 60px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+}
+#hero h1{
+	font-size: 5rem;
+	margin-bottom: 1rem;
+}
+
+.profile-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 30px;
+  border: 1px solid #ffffff40;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+.image .profile-pic{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 8px;
+  background: linear-gradient(130deg, #fdbb2d, #22c1c3);
+  margin: auto;
+  background-size: 300% 300%;
+  animation: animated-gradient 2s linear infinite;
+}
+@keyframes animated-gradient{
+  25%{
+    background-position: left bottom;
+  }
+  50%{
+    background-position: right bottom;
+  }
+  75%{
+    background-position: right top;
+  }
+  100%{
+    background-position: left top;
+
+  }
+}
+.data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-top: 15px;
+}
+.data h2{
+  font-size: 33px;
+  font-weight: 600;
+  color: ghostwhite ;
+}
+.data span{
+  font-size: 20px;
+  color: ghostwhite;
+}
+
+P{
+  font-size: 18px;
+  color: ghostwhite;
+}
+.row{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.row .info{
+  text-align: center;
+  padding: 0 20px;
+  color: ghostwhite;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.buttons .btn{
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 8px 25px;
+  border-radius: 25px;
+  font-size: 18px;
+  white-space: nowrap;
+  background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%);
+}
+.buttons .btn:hover{
+  box-shadow: inset 0 5px 20px rgba(0,0,0,0.4);
+}
+

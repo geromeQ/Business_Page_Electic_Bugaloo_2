@@ -9,11 +9,13 @@
 body {
 	min-height: 100vh;
 	overflow: hidden;
+	background: #020912;
 }
 
 a {
 	text-decoration: none;
 	font-size: 1rem;
+	color: #f9f9f9;
 }
 
 /* color for hover options */
@@ -103,11 +105,11 @@ header {
 }
 .parallax img#gate-left {
 	position: fixed;
-	transform: translateX(-282px);
+	transform: translateX(-620px);
 }
 .parallax img#gate-right {
 	position: fixed;
-	transform: translateX(305px);
+	transform: translateX(640px);
 }
 .sec {
 	position: relative;
