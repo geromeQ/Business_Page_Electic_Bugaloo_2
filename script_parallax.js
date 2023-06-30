@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
     text.style.marginTop = value * 2.5 + 'px';
     treeLeft.style.left = value * -1.5 + 'px';
     treeRight.style.left = value * 1.5 + 'px';
-    gateLeft.style.left = value * 1.4 + 'px';
-    gateRight.style.left = value * -1.4 + 'px';
+    gateLeft.style.left = value * 1.2 + 'px';
+    gateRight.style.left = value * -1.2 + 'px';
     
 });
